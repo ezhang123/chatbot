@@ -1,0 +1,24 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "How are you?", "Is anyone there?", "Hello", "Good day", "Howdy", "Yo", "Hey"],
+      "responses": [
+        "Hey there",
+        "Hello, thanks for visiting",
+        "Hi there",
+        "Hi there, How can I help?",
+        "Well hello",
+        "Greetings!"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Later"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon"
+      ]
+    }
+  ]
+}
