@@ -2,7 +2,7 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["Hi", "Hey", "How are you?", "Hello"],
+      "patterns": ["Hi", "Hey", "How are you?", "Hello", "Greetings", "How is it going?"],
       "responses": [
         "Hey there",
         "Hello, thanks for visiting",
@@ -13,7 +13,7 @@
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": ["Bye", "See you later", "Goodbye", "Have a good day"],
       "responses": [
         "See you later, thanks for visiting",
         "Have a nice day",
@@ -22,10 +22,77 @@
     },
         {
       "tag": "thanks",
-      "patterns": ["Thank you", "Thanks"],
+      "patterns": ["Thank you", "Thanks", "Thank you for your help", "Thank you so much"],
       "responses": [
         "No Problem",
         "You're Welcome"
+      ]
+    },
+    {
+      "tag": "order",
+      "patterns": ["I would like to order", "Can I order?", "I would like to buy something", "Buy", "Order"],
+      "responses": [
+        "Certainly, what would you like to order?",
+        "Sure, What would you like?"
+      ]
+    },
+    {
+      "tag": "items",
+      "patterns": ["What do you sell?", "What do you have?", "What kind of items are there?", "What is on the menu?", "Items", "Menu"],
+      "responses": [
+        "We have coffee or tea",
+        "We have drinks such as coffee or tea"
+      ]
+    },
+    {
+      "tag": "size",
+      "patterns": ["I want coffee", "Can I have coffee?", "I want tea", "Can I have tea?", "Coffee", "Tea"],
+      "responses": [
+        "Certainly, what size drink? Small Medium or Large?",
+        "Sure, what size? Small Medium or Large?"
+      ]
+    },
+    {
+      "tag": "large",
+      "patterns": ["Large", "I want a large", "Large Coffee", "Large Tea"],
+      "responses": [
+        "A Large is $5.50",
+        "It will be $5.50",
+        "That will be $5.50"
+      ]
+    },
+    {
+      "tag": "medium",
+      "patterns": ["Medium", "I want a medium", "Medium Coffee", "Medium Tea"],
+      "responses": [
+        "A medium is $4.50",
+        "It will be $4.50",
+        "That will be $4.50"
+      ]
+    },
+    {
+      "tag": "small",
+      "patterns": ["Small", "I want a small", "Small Coffee", "Small Tea"],
+      "responses": [
+        "A small is $3.50",
+        "It will be $3.50",
+        "That will be $3.50"
+      ]
+    },
+    {
+      "tag": "payment",
+      "patterns": ["Do you take credit cards?", "How do I pay", "How can I pay?", "Do you take cash?", "Pay", "Cash", "Credit Card"],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and paypal"
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": ["How long will it take?", "How long is the time?", "How long is the wait?", "When will it be done?", "Time", "Wait"],
+      "responses": [
+        "It will take about 5-10 minutes",
+        "Your order will take 5-10 minutes"
       ]
     }
   ]

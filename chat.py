@@ -24,17 +24,17 @@ model.load_state_dict(model_state)
 model.eval()
 
 bot_name = "Rob"
-print("I'm alive! Type 'I am a horrible human being' to abandon me into the depth of the abyss")
+print("type 'quit' to exit")
 while True:
     sentence = input('You: ')
-    if sentence == "I am a horrible human being":
-        print(f"{bot_name}: You are indeed")
+    if sentence == "quit":
+        print(f"{bot_name}: Shutting down")
         break
 
     sentence = tokenize(sentence)
     x = bag_of_words(sentence, all_words)
     x = x.reshape(1, x.shape[0])
-    x = torch.from_numpy(x)
+    x = torch.from_numpy(x).to(device)
 
     output = model(x)
     _, predicted = torch.max(output, dim=1)
